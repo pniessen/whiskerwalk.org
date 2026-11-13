@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Whisker Walk app icon (B1): refined cat-face with a subtle walking-paw-print cue -->
+  <rect width="512" height="512" rx="96" fill="#1c2431"/>
+
+  <!-- ears -->
+  <polygon points="150,214 210,102 240,224" fill="#f1e0c2"/>
+  <polygon points="362,214 302,102 272,224" fill="#f1e0c2"/>
+  <polygon points="174,202 208,144 222,214" fill="#e7a9a0"/>
+  <polygon points="338,202 304,144 290,214" fill="#e7a9a0"/>
+
+  <!-- head -->
+  <circle cx="256" cy="302" r="150" fill="#f1e0c2"/>
+
+  <!-- tabby markings -->
+  <path d="M212 176 q10 24 4 44" stroke="#d8bd8f" stroke-width="12" stroke-linecap="round" fill="none"/>
+  <path d="M256 166 q0 26 0 48" stroke="#d8bd8f" stroke-width="12" stroke-linecap="round" fill="none"/>
+  <path d="M300 176 q-10 24 -4 44" stroke="#d8bd8f" stroke-width="12" stroke-linecap="round" fill="none"/>
+
+  <!-- eyes -->
+  <ellipse cx="205" cy="296" rx="20" ry="26" fill="#1c2431"/>
+  <ellipse cx="307" cy="296" rx="20" ry="26" fill="#1c2431"/>
+  <circle cx="211" cy="286" r="6" fill="#f1e0c2"/>
+  <circle cx="313" cy="286" r="6" fill="#f1e0c2"/>
+
+  <!-- nose (accent) -->
+  <path d="M244 334 h24 l-12 14 z" fill="#f0a58c"/>
+
+  <!-- mouth -->
+  <path d="M256 348 v8 M256 356 q-16 14 -34 5 M256 356 q16 14 34 5" stroke="#c99a72" stroke-width="7" stroke-linecap="round" fill="none"/>
+
+  <!-- whiskers -->
+  <path d="M92 300 h58 M96 326 h54" stroke="#f1e0c2" stroke-width="7" stroke-linecap="round" opacity="0.9"/>
+  <path d="M362 300 h58 M362 326 h54" stroke="#f1e0c2" stroke-width="7" stroke-linecap="round" opacity="0.9"/>
+
+  <!-- walking cue: two small trailing paw prints -->
+  <g fill="#f1e0c2" opacity="0.85">
+    <ellipse cx="196" cy="486" rx="9" ry="7"/>
+    <circle cx="185" cy="475" r="3.2"/>
+    <circle cx="194" cy="472" r="3.2"/>
+    <circle cx="203" cy="473" r="3.2"/>
+    <circle cx="210" cy="477" r="3.2"/>
+
+    <ellipse cx="248" cy="466" rx="11" ry="8.5"/>
+    <circle cx="235" cy="454" r="3.8"/>
+    <circle cx="245" cy="450" r="3.8"/>
+    <circle cx="256" cy="451" r="3.8"/>
+    <circle cx="265" cy="456" r="3.8"/>
+  </g>
+</svg>

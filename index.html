@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Whisker Walk</title>
+<meta name="description" content="Whisker Walk is a gentle game about taking a cat for a walk. Coming soon.">
+<meta name="theme-color" content="#1c2431">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<meta property="og:title" content="Whisker Walk">
+<meta property="og:description" content="A gentle game about taking a cat for a walk. Coming soon.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://whiskerwalk.org/">
+<style>
+  :root {
+    --navy: #1c2431; --frame: #223047; --line: #33425e;
+    --cream: #f1e0c2; --pink: #e7a9a0; --muted: #a3b0c6; --gold: #f2c14e;
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    background: var(--navy);
+    color: var(--cream);
+    font-family: Avenir, 'Avenir Next', Nunito, 'Trebuchet MS', system-ui, sans-serif;
+    line-height: 1.5;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    min-height: 100svh;
+    overflow-x: hidden;
+  }
+  main {
+    display: grid;
+    place-items: center;
+    padding: 48px 24px 24px;
+    padding-left: max(24px, env(safe-area-inset-left));
+    padding-right: max(24px, env(safe-area-inset-right));
+  }
+  .card { text-align: center; max-width: 34rem; }
+  .icon {
+    width: clamp(120px, 34vw, 184px);
+    height: auto;
+    border-radius: 22%;
+    box-shadow: 0 0 0 1px var(--line), 0 24px 60px rgba(0, 0, 0, .45);
+  }
+  h1 {
+    font-size: clamp(2.4rem, 9vw, 4rem);
+    line-height: 1.05;
+    letter-spacing: -.01em;
+    margin: 28px 0 10px;
+    font-weight: 800;
+    text-wrap: balance;
+  }
+  .lede {
+    font-size: clamp(1.1rem, 3.6vw, 1.35rem);
+    margin: 0 auto;
+    max-width: 26rem;
+    color: #fff;
+    text-wrap: balance;
+  }
+  .soon {
+    display: inline-block;
+    margin-top: 26px;
+    padding: 8px 18px;
+    border-radius: 999px;
+    background: var(--frame);
+    border: 1px solid var(--line);
+    color: var(--gold);
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    font-size: .85rem;
+  }
+  .trail {
+    display: block;
+    width: min(340px, 78vw);
+    height: auto;
+    margin: 34px auto 0;
+  }
+  .paw { fill: var(--cream); opacity: .14; }
+  @media (prefers-reduced-motion: no-preference) {
+    .paw { animation: step 5.6s ease-in-out infinite; }
+    .paw:nth-of-type(2) { animation-delay: .7s; }
+    .paw:nth-of-type(3) { animation-delay: 1.4s; }
+    .paw:nth-of-type(4) { animation-delay: 2.1s; }
+    .paw:nth-of-type(5) { animation-delay: 2.8s; }
+    .paw:nth-of-type(6) { animation-delay: 3.5s; }
+  }
+  @keyframes step {
+    0%, 100% { opacity: .14; }
+    12% { opacity: .8; }
+    45% { opacity: .14; }
+  }
+  footer {
+    text-align: center;
+    padding: 20px 24px max(24px, env(safe-area-inset-bottom));
+    color: var(--muted);
+    font-size: .95rem;
+  }
+  a { color: var(--pink); text-underline-offset: 3px; }
+  a:hover { color: #fff; }
+  a:focus-visible { outline: 3px solid #fff; outline-offset: 3px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="card">
+    <img class="icon" src="icon.svg" width="184" height="184" alt="A cream tabby cat's face, the Whisker Walk icon">
+    <h1>Whisker Walk</h1>
+    <p class="lede">A gentle game about taking a cat for a walk.</p>
+    <p class="soon">Coming soon</p>
+    <svg class="trail" viewBox="0 0 340 60" role="img" aria-label="A trail of paw prints">
+      <defs>
+        <g id="paw">
+          <ellipse cx="0" cy="5" rx="8" ry="6.4"/>
+          <circle cx="-9" cy="-5" r="3"/>
+          <circle cx="-3" cy="-9.5" r="3.2"/>
+          <circle cx="4" cy="-9.5" r="3.2"/>
+          <circle cx="10" cy="-5" r="3"/>
+        </g>
+      </defs>
+      <use class="paw" href="#paw" transform="translate(30 40) rotate(78)"/>
+      <use class="paw" href="#paw" transform="translate(86 20) rotate(102)"/>
+      <use class="paw" href="#paw" transform="translate(142 40) rotate(78)"/>
+      <use class="paw" href="#paw" transform="translate(198 20) rotate(102)"/>
+      <use class="paw" href="#paw" transform="translate(254 40) rotate(78)"/>
+      <use class="paw" href="#paw" transform="translate(310 20) rotate(102)"/>
+    </svg>
+  </div>
+</main>
+<footer>
+  Say hello: <a href="mailto:hello@whiskerwalk.org">hello@whiskerwalk.org</a>
+</footer>
+</body>
+</html>
